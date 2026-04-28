@@ -1,0 +1,19 @@
+.zotero-cite-suggest-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.zotero-cite-suggest-title {
+  font-weight: 600;
+}
+
+.zotero-cite-suggest-meta {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.zotero-cite-suggest-empty {
+  color: var(--text-muted);
+  padding: 6px 8px;
+}

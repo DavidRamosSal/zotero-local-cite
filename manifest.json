@@ -1,0 +1,9 @@
+{
+  "id": "zotero-local-cite",
+  "name": "Zotero Local Cite",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Insert Zotero citations from the local Zotero API while writing notes.",
+  "author": "Dave",
+  "isDesktopOnly": true
+}

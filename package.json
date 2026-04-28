@@ -1,0 +1,26 @@
+{
+  "name": "zotero-local-cite",
+  "version": "0.1.0",
+  "description": "Obsidian plugin for inline Zotero citations via the local Zotero API.",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "install:test-vault": "node scripts/install-to-vault.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "zotero",
+    "plugin"
+  ],
+  "author": "Dave",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "builtin-modules": "^4.0.0",
+    "esbuild": "^0.25.0",
+    "obsidian": "^1.8.7",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  }
+}
