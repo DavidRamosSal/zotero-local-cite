@@ -63,19 +63,17 @@ The release assets are:
 
 ## Test Vault Install
 
-This repo includes a helper script that copies the built plugin files into a local test vault:
+This repo includes a helper script that copies the built plugin files into a local test vault. Pass the vault root path as the command argument:
 
 ```bash
-npm run install:test-vault
+npm run install:test-vault -- "/path/to/your/vault"
 ```
 
-By default, the script installs to:
+The script copies the release assets to:
 
 ```text
-/Users/dave/Documents/test/.obsidian/plugins/zotero-local-cite
+/path/to/your/vault/.obsidian/plugins/zotero-local-cite
 ```
-
-Set `OBSIDIAN_TEST_VAULT` to install into a different vault root.
 
 ## Limitations
 

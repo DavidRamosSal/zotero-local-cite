@@ -2,7 +2,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const pluginId = "zotero-local-cite";
-const vaultRoot = process.env.OBSIDIAN_TEST_VAULT ?? "/Users/dave/Documents/test";
+const vaultRoot = process.argv[2];
+
+if (!vaultRoot) {
+  console.error("Usage: npm run install:test-vault -- /path/to/your/vault");
+  process.exit(1);
+}
+
 const pluginDir = path.join(vaultRoot, ".obsidian", "plugins", pluginId);
 const distDir = path.join(process.cwd(), "dist");
 
